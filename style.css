@@ -28,3 +28,10 @@
 	padding-left: 30px;
 	padding-top: 30px;
 }
+.row .results {
+	background: #ffffff;
+	width: 500px;
+}
+.row .data {
+	padding-left: 30px;
+}
