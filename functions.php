@@ -1,5 +1,6 @@
 <?php
 
+// fonction de tri a bulles
 function bulles(&$tab) {
 
 	$size = count($tab);
@@ -18,6 +19,7 @@ function bulles(&$tab) {
 	}
 }
 
+//fonction de tri par insertion
 function insertion(&$tab) {
 
 	$n = count($tab);
@@ -37,6 +39,7 @@ function insertion(&$tab) {
 	}
 }
 
+//fonction de tri par selection
 function selection(&$tab) {
 
 	$n = count($tab);
@@ -60,6 +63,7 @@ function selection(&$tab) {
 	}
 }
 
+//controller list num
 function control_array_num ($array) {
 	foreach ($array as $num) {
 	    if (!is_numeric($num)) {
