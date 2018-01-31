@@ -3,6 +3,7 @@
 // fonction de tri a bulles
 function bulles(&$tab) {
 
+	$count_op = 0;
 	$size = count($tab);
 
 	for ($i = $size - 1 ; $i > 0 ; $i--) {
@@ -15,13 +16,17 @@ function bulles(&$tab) {
 	 			$tab[$j+1] = $tab[$j];
 	 			$tab[$j] = $tmp;
 	 		}
+	 		$count_op++;
 	 	}
 	}
+
+	return $count_op;
 }
 
 //fonction de tri par insertion
 function insertion(&$tab) {
 
+	$count_op = 0;
 	$n = count($tab);
 	
 	for($i = 1; $i <= $n - 1 ; $i++) {
@@ -33,15 +38,20 @@ function insertion(&$tab) {
 
 			$tab[$j] = $tab[$j - 1];
 			$j = $j - 1;
+		
+			$count_op++;
 		}
 
 		$tab[$j] = $x;
 	}
+
+	return $count_op;
 }
 
 //fonction de tri par selection
 function selection(&$tab) {
 
+	$count_op = 0;
 	$n = count($tab);
 
 	for ($i=0; $i <= $n-1 ; $i++) {
@@ -53,6 +63,8 @@ function selection(&$tab) {
 			if ($tab[$j] < $tab[$min]) {
 				$min = $j;
 			}
+
+			$count_op++;
 		}
 
 		if ($min != $i) {
@@ -61,6 +73,8 @@ function selection(&$tab) {
 			$tab[$min] = $tmp;
 		}
 	}
+
+	return $count_op;
 }
 
 //controller list num

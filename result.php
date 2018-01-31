@@ -11,7 +11,7 @@ if (!empty($_POST)) {
 			
 			$tri = $_POST['tri'];
 			$start = (float) array_sum(explode(' ',microtime()));
-			$tri($list);
+			echo 'Nombre itérations :'. $tri($list) . '<br />';
 			$end = (float) array_sum(explode(' ',microtime()));
 			echo "Processing time: ". sprintf("%.8f", ($end-$start))." seconds.<br />";
 			print_r($list);
