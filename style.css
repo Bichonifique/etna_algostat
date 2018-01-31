@@ -7,6 +7,11 @@
     background-size: cover;
     font-family: sans-serif; 
 }
+.background .error {
+	text-align: center;
+	color: red;
+	padding-top: 30px;
+}
 .row {
 	display: flex;
 	justify-content: center;
@@ -31,6 +36,7 @@
 .row .results {
 	background: #ffffff;
 	width: 500px;
+	border: solid 1px black;
 }
 .row .data {
 	padding-left: 30px;
