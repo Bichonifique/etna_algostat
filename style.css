@@ -1,0 +1,30 @@
+/* ETNA CMG-ALG3 */
+
+.background {
+	background-color: #F0FFFF;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif; 
+}
+.row {
+	display: flex;
+	justify-content: center;
+}
+.title {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.first label {
+	font-size: 25px;
+}
+.first .champ {
+	padding-top: 10px;
+	font-size: 20px;
+	height: 200px;
+	width: 500px;
+}
+.second {
+	padding-left: 30px;
+	padding-top: 30px;
+}
