@@ -17,7 +17,7 @@ require_once('functions.php');
 			<div class="col-md-6">
 				<div class="first">
 					<label>Entrer une liste de nombres à trier : </label></br>
-					<textarea class="champ" name="list-numbers"></textarea>
+					<input class="champ" type="text" name="list-numbers" value="890, 4, 33, 780, 65, 782, 908, 750, 40, 8, 74, 30">
 				</div>
 			</div>
 			<div class="col-md-6">
