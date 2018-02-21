@@ -26,6 +26,10 @@ require_once('functions.php');
 						<option value="bulles">Tri à bulles</option>
 						<option value="selection">Tri par selection</option>
 						<option value="insertion">Tri par insertion</option>
+						<option value="shell">Tri de Shell</option>
+						<option value="fusion">Tri fusion</option>
+						<option value="tri_rapide">Tri rapide</option>
+						<option value="peigne">Tri à peigne</option>
 					</select>
 					<input type="submit" value="Trier">
 				</div>

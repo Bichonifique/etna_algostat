@@ -19,7 +19,14 @@ if (!empty($_POST)) {
 			
 			$tri = $_POST['tri'];
 			$start = (float) array_sum(explode(' ',microtime()));
-			$count=$tri($list);
+			if ($tri == 'tri_rapide') {
+				
+				$count = $tri($list, 0, count($list) - 1);
+			}
+			else {
+
+				$count = $tri($list);
+			}
 			$end = (float) array_sum(explode(' ',microtime()));
 			$time = $end-$start;
 			?>
